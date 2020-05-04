@@ -27,7 +27,7 @@ MACHINES = {
         :net => [
                    {ip: '10.2.2.2', adapter: 2, netmask: "255.255.255.252", virtualbox__intnet: "router-net1"},
                    {ip: '192.168.2.129', adapter: 3, netmask: "255.255.255.192", virtualbox__intnet: "mgmt-net1"},
-                   {ip: '192.168.2.64', adapter: 4, netmask: "255.255.255.192", virtualbox__intnet: "test-net1"},
+                   {ip: '192.168.2.65', adapter: 4, netmask: "255.255.255.192", virtualbox__intnet: "test-net1"},
                    {ip: '192.168.2.1', adapter: 5, netmask: "255.255.255.192", virtualbox__intnet: "dev-net1"},
                    {ip: '192.168.2.193', adapter: 6, netmask: "255.255.255.192", virtualbox__intnet: "hw-net1"},
                 ]
@@ -153,10 +153,6 @@ Vagrant.configure("2") do |config|
             systemctl restart network
             SHELL
         end
-      
-    end
-
+      end
   end
-  
-  
 end
